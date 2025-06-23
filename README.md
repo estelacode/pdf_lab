@@ -38,13 +38,35 @@ git push --set-upstream origin master
 git push -u origin master
 ```
 
-## Project Structure
+☑️ Step 7:  Add and remove dependencies
+```bash
+uv add [OPTIONS] <PACKAGES>...  # Add dependencies to the project
+uv remove [OPTIONS] <PACKAGES>... # Remove dependencies from the project.
+```
+
+## Usage
+```bash
+cd llama_parse_lab
+uv run main.py
+```
+
+## Build the artifact
+```bash
+uv build
+```
+
+## Developer mode
+```bash
+uv pip install -e . #
+uv pip install --editable . # Install the editable package based on the provided local file path.
+```
 
 ## Tech Stack
 * [Gradio](https://www.gradio.app/docs)
 * [Rancher Desktop](https://docs.rancherdesktop.io/)
-* [Llama Parse](https://www.llamaindex.ai/llamaparse)
 * [uv](https://docs.astral.sh/uv/concepts/projects/dependencies/)
 
+#### PDF Procesing Libraries
+* [Llama Parse](https://www.llamaindex.ai/llamaparse)
 * [PyMuPDF](https://github.com/pymupdf/PyMuPDF)
 * [pdfminer.six](https://pypi.org/project/pdfminer.six/)
