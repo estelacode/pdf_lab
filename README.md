@@ -1,5 +1,8 @@
 # Llama Parse Lab
 
+## Objective
+Create an app to extract text from PDFs. It uses Llama Parse library to perform the text extraction.
+
 ## Installation
 
 ☑️ Step 1: Create Virtual Enviroment
@@ -34,3 +37,14 @@ git commit -m "README.md"
 git push --set-upstream origin master 
 git push -u origin master
 ```
+
+## Project Structure
+
+## Tech Stack
+* [Gradio](https://www.gradio.app/docs)
+* [Rancher Desktop](https://docs.rancherdesktop.io/)
+* [Llama Parse](https://www.llamaindex.ai/llamaparse)
+* [uv](https://docs.astral.sh/uv/concepts/projects/dependencies/)
+
+* [PyMuPDF](https://github.com/pymupdf/PyMuPDF)
+* [pdfminer.six](https://pypi.org/project/pdfminer.six/)
