@@ -82,7 +82,7 @@ docker run -d -p 7860:7860 -e LLAMA_CLOUD_API_KEY="XXXXXXXXXXXXXXXXXXXXXXXXXX" p
 
 ## Tech Stack
 * [Gradio](https://www.gradio.app/docs)
-* [Rancher Desktop](https://docs.rancherdesktop.io/)
+* [Docker Desktop Community](https://docs.docker.com/)
 * [uv](https://docs.astral.sh/uv/concepts/projects/dependencies/)
 
 #### PDF Procesing Libraries
