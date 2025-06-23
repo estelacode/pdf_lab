@@ -1,0 +1,10 @@
+[project]
+name = "llama-parse-lab"
+version = "0.1.0"
+description = "Gradio app to extract text and images from pdf"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "gradio>=5.34.2",
+    "pymupdf>=1.26.1",
+]
