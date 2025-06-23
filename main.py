@@ -20,8 +20,14 @@ def select_method_extraction(path_file:str, method_extraction:str)->str:
     else:
         return load_pdf_llama_parse(path_file)
     
+def main():
+    """
+    Main function to run the Gradio interface.
+    """
 
-demo = gr.Interface(fn = select_method_extraction, 
+    gr.Interface(fn = select_method_extraction, 
                     inputs = [gr.File(file_types=[".pdf"]), gr.Dropdown(["pymupdf", "llama_parse"])], 
-                    outputs = gr.Text())
-demo.launch()
+                    outputs = gr.Text()).launch(server_name='0.0.0.0')
+
+if __name__ == '__main__':
+    main()

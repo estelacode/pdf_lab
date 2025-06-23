@@ -54,12 +54,31 @@ uv run main.py
 ```bash
 uv build
 ```
+## Requirements
+```bash
+uv pip freeze > requirements.txt
+```
 
 ## Developer mode
 ```bash
 uv pip install -e . #
 uv pip install --editable . # Install the editable package based on the provided local file path.
 ```
+
+## Docker Image
+1. Create a docker image
+```bash
+docker build -t pdf_lab . # build your Docker image
+```
+2. Create a docker container
+```bash
+docker run -d -p 7860:7860 pdf_lab
+```
+3. Create a docker container with enviroment variables
+```bash
+docker run -d -p 7860:7860 -e LLAMA_CLOUD_API_KEY="XXXXXXXXXXXXXXXXXXXXXXXXXX" pdf_lab
+```
+
 
 ## Tech Stack
 * [Gradio](https://www.gradio.app/docs)
