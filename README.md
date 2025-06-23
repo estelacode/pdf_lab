@@ -1,7 +1,7 @@
-# Llama Parse Lab
+# PDF Lab
 
 ## Objective
-Create an app to extract text from PDFs. It uses Llama Parse library to perform the text extraction.
+Create an app to extract text from PDFs. It uses libraries to perform the text extraction such as pymupdf, llama-parse, etc.
 
 ## Installation
 
@@ -26,7 +26,7 @@ uv init
 ```
 ☑️ Step 5: Link my local repository to my Github remote repository
 ```bash
-git remote add origin https://github.com/estelacode/llama_parse_lab.git
+git remote add origin https://github.com/estelacode/pdf_lab.git
 git remote -v  # Verify the remote repository is added
 ```
 
@@ -46,7 +46,7 @@ uv remove [OPTIONS] <PACKAGES>... # Remove dependencies from the project.
 
 ## Usage
 ```bash
-cd llama_parse_lab
+cd pdf_lab
 uv run main.py
 ```
 

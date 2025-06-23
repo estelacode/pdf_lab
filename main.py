@@ -1,6 +1,6 @@
 
 import gradio as gr
-from llama_parse_lab.utils import load_pdf_pymupdf, load_pdf_llama_parse
+from pdf_lab.utils import load_pdf_pymupdf, load_pdf_llama_parse
 
 def select_method_extraction(path_file:str, method_extraction:str)->str:
     
