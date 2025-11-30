@@ -1,0 +1,15 @@
+sequenceDiagram
+    participant User as Usuario
+    participant Frontend
+    participant Backend
+    participant PyMuPDF
+    participant LlamaParse as Llama-Parse
+
+    User->>Frontend: Upload PDF
+    Frontend->>Backend: Send PDF
+    Backend->>PyMuPDF: Extract text from PDF
+    PyMuPDF-->>Backend: Text extracted
+    Backend->>LlamaParse: Parse extracted text
+    LlamaParse-->>Backend: Parsed text
+    Backend-->>Frontend: Return processed text
+    Frontend-->>User: Display text
