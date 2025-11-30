@@ -21,11 +21,8 @@ Basic flow for the sequence diagram:
 7. The Frontend displays the text to the User.
 
 ## Tech Stack
-![Python](https://img.shields.io/badge/Python-3.13.3-white?style=for-the-badge&logo=python&logoColor=black)
-![Gradio](https://img.shields.io/badge/Gradio-5.34.2-white?style=for-the-badge&logo=gradio&logoColor=black)
-![uv](https://img.shields.io/badge/uv-0.9.13-white?style=for-the-badge&logo=uv&logoColor=black)
-![llama-cloud-services](https://img.shields.io/badge/llama--cloud--services-%3E%3D0.6.35-white?style=for-the-badge&logoColor=black)
-![PyMuPDF](https://img.shields.io/badge/PyMuPDF-%3E%3D1.26.1-white?style=for-the-badge&logoColor=black)
+
+![Python](https://img.shields.io/badge/Python-white?style=for-the-badge&logo=python&logoColor=black)![3.13.3](https://img.shields.io/badge/3.13.3-3c64f3?style=for-the-badge&logoColor=white&labelColor=3c64f3&color=3c64f3) ![Gradio](https://img.shields.io/badge/Gradio-white?style=for-the-badge&logo=gradio&logoColor=black)![5.34.2](https://img.shields.io/badge/5.34.2-3c64f3?style=for-the-badge&logoColor=white&labelColor=3c64f3&color=3c64f3) ![uv](https://img.shields.io/badge/uv-white?style=for-the-badge&logo=uv&logoColor=black)![0.9.13](https://img.shields.io/badge/0.9.13-3c64f3?style=for-the-badge&logoColor=white&labelColor=3c64f3&color=3c64f3) ![llama-cloud-services](https://img.shields.io/badge/llama--cloud--services-white?style=for-the-badge&logoColor=black)![>=0.6.35](https://img.shields.io/badge/%3E%3D0.6.35-3c64f3?style=for-the-badge&logoColor=white&labelColor=3c64f3&color=3c64f3) ![PyMuPDF](https://img.shields.io/badge/PyMuPDF-white?style=for-the-badge&logoColor=black)![>=1.26.1](https://img.shields.io/badge/%3E%3D1.26.1-3c64f3?style=for-the-badge&logoColor=white&labelColor=3c64f3&color=3c64f3)
 
 
 ## Project Structure
