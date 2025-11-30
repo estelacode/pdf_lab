@@ -1,5 +1,5 @@
 version = 1
-revision = 2
+revision = 3
 requires-python = ">=3.13"
 
 [[package]]
@@ -886,6 +886,7 @@ dependencies = [
     { name = "gradio" },
     { name = "llama-cloud-services" },
     { name = "pymupdf" },
+    { name = "python-dotenv" },
 ]
 
 [package.metadata]
@@ -893,6 +894,7 @@ requires-dist = [
     { name = "gradio", specifier = ">=5.34.2" },
     { name = "llama-cloud-services", specifier = ">=0.6.35" },
     { name = "pymupdf", specifier = ">=1.26.1" },
+    { name = "python-dotenv", specifier = ">=1.1.0" },
 ]
 
 [[package]]

@@ -1,6 +1,10 @@
 import pymupdf
 from llama_cloud_services import LlamaParse
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
 
 def load_pdf_pymupdf(pdf_file:str)->str:
     
@@ -45,9 +49,9 @@ def load_pdf_llama_parse(pdf_file:str)->str:
     """
     
      # Check if the environment variable is set
-    if not os.environ.get("LLAMA_CLOUD_API_KEY"):
+    if not os.getenv("LLAMA_CLOUD_API_KEY"):
         raise ValueError("LLAMA_CLOUD_API_KEY is not set")
-    api_key = os.environ.get("LLAMA_CLOUD_API_KEY")
+    api_key = os.getenv("LLAMA_CLOUD_API_KEY")
     
     # Create an instance of the LlamaParse class
     parser = LlamaParse(api_key=api_key, num_workers=1,verbose=True,language="en")

@@ -2,6 +2,7 @@
 import gradio as gr
 from pdf_lab.utils import load_pdf_pymupdf, load_pdf_llama_parse
 
+
 def select_method_extraction(path_file:str, method_extraction:str)->str:
     
     """
@@ -27,7 +28,18 @@ def main():
 
     gr.Interface(fn = select_method_extraction, 
                     inputs = [gr.File(file_types=[".pdf"]), gr.Dropdown(["pymupdf", "llama_parse"])], 
-                    outputs = gr.Text()).launch(server_name='0.0.0.0')
+                    outputs = gr.Text()).launch(server_name='0.0.0.0', server_port=8080)
+
+def main_local():
+    """
+    Main function to run the Gradio interface.
+    """
+
+    gr.Interface(fn = select_method_extraction, 
+                    inputs = [gr.File(file_types=[".pdf"]), gr.Dropdown(["pymupdf", "llama_parse"])], 
+                    outputs = gr.Text()).launch()
 
 if __name__ == '__main__':
-    main()
+    main() # Running on Docker
+    # print("Starting up the app...")
+    # main_local() # Running on local URL:  http://127.0.0.1:7860
