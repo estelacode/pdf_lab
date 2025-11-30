@@ -3,3 +3,7 @@ notebook
 .venv
 .python-version
 .git
+data
+.env
+.env.example
+docs

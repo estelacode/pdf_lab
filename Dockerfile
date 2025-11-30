@@ -14,7 +14,7 @@ RUN pip install --upgrade pip
 RUN pip install dist/*.whl
 
 # Expose a port if your app runs a server (uncomment if needed)
-EXPOSE 7860
+EXPOSE 8080
 
 # Set the default command to run your app (update as needed)
 CMD ["python", "main.py"]
